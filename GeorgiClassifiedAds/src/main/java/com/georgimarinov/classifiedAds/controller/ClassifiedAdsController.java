@@ -17,7 +17,7 @@ public class ClassifiedAdsController {
     @PostMapping("/add")
     public String add(@RequestBody ClassifiedAd classifiedAd){
         classifiedAdsService.saveClassifiedAd(classifiedAd);
-        return  "New classified Ad is added";
+        return  "Кратката обява е добавена успешно...";
     }
 
     @GetMapping("/getAll")

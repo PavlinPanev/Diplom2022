@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 export default function Appbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ background: "#ed1c2a" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -21,7 +21,7 @@ export default function Appbar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Spring Boot React Full Stack Application
+            Търся/Предлагам | Kaufland
           </Typography>
         </Toolbar>
       </AppBar>
