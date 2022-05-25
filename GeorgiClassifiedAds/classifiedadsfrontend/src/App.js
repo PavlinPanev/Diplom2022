@@ -1,12 +1,15 @@
 import './App.css';
+import { useState } from 'react';
 import Appbar from './components/Appbar';
-import Student from './components/Student';
+import ClassifiedAds from './components/ClassifiedAds';
+import { Button } from '@mui/material';
+
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">     
       <Appbar/>
-      <Student />
+      <ClassifiedAds/> 
     </div>
   );
 }

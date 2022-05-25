@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
@@ -76,15 +78,18 @@ public class ClassifiedAd {
     public void setContactPhone(String contactPhone) {
         this.contactPhone = contactPhone;
     }
-    public Date getEntryDate() {
-        return entryDate;
+    public String getEntryDate() {
+        DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        return dateFormat.format(entryDate);
     }
 
     public void setEntryDate(Date entryDate) {
         this.entryDate = entryDate;
     }
-    public Date getExpiryDate() {
-        return expiryDate;
+    public String getExpiryDate()
+    {
+        DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        return dateFormat.format(expiryDate);
     }
 
     public void setExpiryDate(Date expiryDate) {
